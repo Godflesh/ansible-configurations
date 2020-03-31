@@ -29,6 +29,10 @@
   version: "2.5.3"
   name: gitlab-server
 
-- src: https://github.com/tenhishadow/manage_bind.git
-  version: "v1.0.0"
+- src: https://github.com/bertvv/ansible-role-bind.git
+  version: "v4.1.0"
   name: bind
+
+- src: https://github.com/atosatto/ansible-minio.git
+  version: "v1.1.0"
+  name: minio

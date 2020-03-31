@@ -6,4 +6,5 @@ dependencies:
   - {role: ANXS.openssh,            tags: openssh }
   - {role: knopki.locale,           tags: locale }
   - {role: geerlingguy.gitlab,      tags: gitlab_server }
-  - {role: tenhishadow.manage_bind, tags: bind }
+  - {role: bertvv.bind,             tags: bind }
+  - {role: atosatto.minio,	        tags: minio }
