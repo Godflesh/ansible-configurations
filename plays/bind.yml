@@ -1,9 +1,8 @@
 ---
 
-- name: bind.yml | All roles
+- name: bind_master.yml | All roles
   hosts: bind_master
   become: True
 
   roles:
-#    - { role: common,                   tags: ["common"] }
     - { role: bind,            tags: ["bind"] }
