@@ -3,6 +3,8 @@ bind_zone_dir: /var/local/named-zones
 bind_zone_file_mode: '0660'
 bind_allow_query:
   - any
+bind_listen_ipv4:
+  - any
 bind_listen_ipv6:
   - none
 bind_acls:
@@ -35,5 +37,7 @@ bind_zone_domains:
       - name: ns1
         ip: 172.16.160.142
       - name: ns2
+        ip: 172.16.160.148
+      - name: minio
         ip: 172.16.160.148
     hostmaster_email: admin
