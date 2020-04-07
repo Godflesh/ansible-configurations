@@ -36,3 +36,15 @@
 - src: https://github.com/atosatto/ansible-minio.git
   version: "v1.1.0"
   name: minio
+
+- src: https://github.com/andrewrothstein/ansible-etcd-cluster.git
+  version: "v1.2.3"
+  name: etcd-cluster
+
+- src: https://github.com/andrewrothstein/ansible-etcd.git
+  version: "v2.1.25"
+  name: andrewrothstein.etcd
+
+- src: https://github.com/andrewrothstein/ansible-unarchive-deps.git
+  version: "v1.1.2"
+  name: andrewrothstein.unarchive-deps
