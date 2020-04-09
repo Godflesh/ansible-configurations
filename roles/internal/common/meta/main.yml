@@ -8,3 +8,5 @@ dependencies:
   - {role: geerlingguy.gitlab,      tags: gitlab_server }
   - {role: bertvv.bind,             tags: bind }
   - {role: atosatto.minio,	        tags: minio }
+  - {role: geerlingguy.haproxy,	    tags: haproxy }
+  - {role: geerlingguy.docker,	    tags: docker }

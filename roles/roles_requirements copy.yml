@@ -37,9 +37,6 @@
   version: "v1.1.0"
   name: minio
 
-- src: https://github.com/geerlingguy/ansible-role-haproxy.git
+- src: git+https://github.com/geerlingguy/ansible-role-haproxy.git
+  version: "v1.1.1"
   name: haproxy
-
-- src: https://github.com/geerlingguy/ansible-role-docker.git
-  name: docker
-

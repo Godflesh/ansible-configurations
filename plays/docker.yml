@@ -1,0 +1,8 @@
+---
+
+- name: docker.yml | All roles
+  hosts: docker
+  become: True
+
+  roles:
+    - { role: docker,            tags: ["docker"] }
