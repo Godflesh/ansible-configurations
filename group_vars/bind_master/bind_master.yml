@@ -10,14 +10,14 @@ bind_listen_ipv6:
 bind_acls:
   - name: acl1
     match_list:
-      - 172.16.0.0/16
+      - 192.168.0.0/16
 bind_forwarders:
   - '8.8.8.8'
   - '8.8.4.4'
 bind_recursion: true
 bind_query_log: 'data/query.log'
 bind_check_names: 'master ignore'
-bind_zone_master_server_ip: "172.16.160.142"
+bind_zone_master_server_ip: "192.168.58.102"
 bind_zone_minimum_ttl: "2D"
 bind_zone_ttl: "2W"
 bind_zone_time_to_refresh: "2D"
@@ -26,18 +26,18 @@ bind_zone_time_to_expire: "2W"
 bind_zone_domains:
   - name: 'devopsua.tk'
     networks:
-      - '172.16.160'
+      - '192.168.58'
     name_servers:
-      - ns1.deopvsua.tk.
-      - ns2.devopsua.tk.
+      - vm2.deopvsua.tk.
+      - vm3.devopsua.tk.
     name_servers:
-      - ns1
-      - ns2
+      - vm2
+      - vm3
     hosts:
-      - name: ns1
-        ip: 172.16.160.142
-      - name: ns2
-        ip: 172.16.160.148
+      - name: vm2
+        ip: 192.168.58.102
+      - name: vm3
+        ip: 192.168.58.103
       - name: minio
-        ip: 172.16.160.148
+        ip: 192.168.58.103
     hostmaster_email: admin
