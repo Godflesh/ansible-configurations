@@ -43,3 +43,18 @@
 - src: https://github.com/geerlingguy/ansible-role-docker.git
   name: docker
 
+- src: https://github.com/andrewrothstein/ansible-etcd-cluster.git
+  version: "v1.2.3"
+  name: etcd-cluster
+
+- src: https://github.com/andrewrothstein/ansible-etcd.git
+  version: "v2.1.25"
+  name: andrewrothstein.etcd
+
+- src: https://github.com/andrewrothstein/ansible-unarchive-deps.git
+  version: "v1.1.2"
+  name: andrewrothstein.unarchive-deps
+
+- src: https://github.com/ansible-community/ansible-vault.git
+  version: "v2.5.2"
+  name: brianshumate.vault
