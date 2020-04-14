@@ -14,6 +14,10 @@ bind_acls:
 bind_forwarders:
   - '8.8.8.8'
   - '8.8.4.4'
+bind_dns_keys:
+  - name: devopsua.tk
+    algorithm: hmac-md5
+    secret: "azertyAZERTY123456"
 bind_recursion: true
 bind_query_log: 'data/query.log'
 bind_check_names: 'master ignore'
