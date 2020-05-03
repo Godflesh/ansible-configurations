@@ -1,8 +1,8 @@
 ---
 
 zones:
-  devopsua.tk:
-    file: "devopsua.tk.zone"
+  area.ua:
+    file: "area.ua.zone"
     zone_serial: '2020052901'
     zone_refresh: '3600'
     zone_retry: '7200'

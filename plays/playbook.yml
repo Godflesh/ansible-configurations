@@ -1,0 +1,12 @@
+---
+- hosts: debian
+  become: yes
+  become_user: root
+  tasks: 
+  - shell: echo "search area.ua \nnameserver 192.168.58.102" > /etc/resolv.conf
+
+- hosts: centos
+  become: yes
+  become_user: root
+  tasks: 
+  - shell: echo -e "search area.ua \nnameserver 192.168.58.102" > /etc/resolv.conf

@@ -5,4 +5,8 @@
   become: True
 
   roles:
+<<<<<<< HEAD
     - { role: minio,           tags: ["minio"] }
+=======
+    - { role: minio,           tags: ["minio"] }
+>>>>>>> 1587efd32df64e29fe2d3aae8e8a3908c23c351e

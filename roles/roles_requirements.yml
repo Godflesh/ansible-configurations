@@ -58,3 +58,15 @@
 - src: https://github.com/ansible-community/ansible-vault.git
   version: "v2.5.2"
   name: brianshumate.vault
+
+- src: https://github.com/ansible-community/ansible-consul.git
+  version: "v2.5.4"
+  name: brianshumate.consul
+
+- src: https://github.com/riemers/ansible-gitlab-runner.git
+  version: "v1.6.6"
+  name: riemers.gitlab-runner
+
+- src: https://github.com/kibatic/ansible-traefik.git
+  version: "1.7.20"
+  name: kibatic.traefik
