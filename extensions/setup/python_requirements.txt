@@ -8,3 +8,7 @@ ansible
 
 #Other packages
 boto
+<<<<<<< HEAD
+=======
+hvac
+>>>>>>> 1587efd32df64e29fe2d3aae8e8a3908c23c351e

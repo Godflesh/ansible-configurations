@@ -1,0 +1,8 @@
+---
+
+- name: traefik.yml | All roles
+  hosts: traefik
+  become: True
+
+  roles:
+    - { role: kibatic.traefik,            tags: ["traefik"] }

@@ -15,7 +15,7 @@ bind_forwarders:
   - '8.8.8.8'
   - '8.8.4.4'
 bind_dns_keys:
-  - name: devopsua.tk
+  - name: area.ua
     algorithm: hmac-md5
     secret: "azertyAZERTY123456"
 bind_recursion: true
@@ -28,20 +28,28 @@ bind_zone_time_to_refresh: "2D"
 bind_zone_time_to_retry: "2H"
 bind_zone_time_to_expire: "2W"
 bind_zone_domains:
-  - name: 'devopsua.tk'
+  - name: 'area.ua'
     networks:
       - '192.168.58'
     name_servers:
-      - vm2.deopvsua.tk.
-      - vm3.devopsua.tk.
+      - vm1.area.ua.
+      - vm3.area.ua.
     name_servers:
-      - vm2
+      - vm1
       - vm3
     hosts:
+      - name: vm1
+        ip: 192.168.58.101  
+      - name: gitlab
+        ip: 192.168.58.101    
       - name: vm2
         ip: 192.168.58.102
       - name: vm3
         ip: 192.168.58.103
       - name: minio
-        ip: 192.168.58.103
+        ip: 192.168.58.103 
+      - name: haproxy
+        ip: 192.168.58.103  
+      - name: vault
+        ip: 192.168.58.103      
     hostmaster_email: admin
